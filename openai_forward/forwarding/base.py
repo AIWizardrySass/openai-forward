@@ -182,7 +182,7 @@ class ForwardingBase:
 
 class OpenaiBase(ForwardingBase):
     _cycle_api_key = cycle(OPENAI_API_KEY)
-    _no_auth_mode = OPENAI_API_KEY != [] and FWD_KEY == set()
+    _no_auth_mode = OPENAI_API_KEY != [] and FWD_KEY == []
 
     chatsaver: ChatSaver = None
     whispersaver: WhisperSaver = None
